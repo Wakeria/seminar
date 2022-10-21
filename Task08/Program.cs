@@ -9,7 +9,7 @@
 Console.WriteLine("введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int Count = 1;
+int Count = 2;
 
 if (number <= 0)
 {
