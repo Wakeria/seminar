@@ -8,3 +8,22 @@
 
 // 32679 -> 6
 
+Console.WriteLine("введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int number2 = number;
+if (number > 100)
+{
+    while (number2 > 1000)
+    {
+        number2 = number2 / 10;
+
+    }
+    int num = number2 % 10;
+
+Console.WriteLine($"{num}");
+
+}
+else
+{
+    Console.WriteLine("третьей цифры нет");
+}
