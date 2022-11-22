@@ -13,8 +13,18 @@ double k1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе значение второй прямой k2 = ");
 double k2 = Convert.ToInt32(Console.ReadLine());
 
-
+if ((k1 == k2) && (b1 == b2))
+{
+    Console.WriteLine($"Прямые совпадают! Выберете другие числа!");
+}
+else if (k1 == k2)
+{
+    Console.WriteLine($"Прямые параллельны! Выберете другие числа!");
+}
+else
+{
 double x = (-b2 + b1) / (-k1 + k2);
 double y = k2 * x + b2;
 
 Console.WriteLine($"точкa пересечения двух прямых -> ({x}, {y})");
+}
